@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1537px',
+        '3xl': '1600px',
+        // => @media (min-width: 1536px) { ... }
+      },
       colors:{
         primary:{
               50: "#e6e9eb",    

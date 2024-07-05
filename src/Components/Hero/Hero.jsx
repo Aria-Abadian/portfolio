@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import BgImage from "../../assets/Hero/liquid-cheese.svg";
 import FollowMe from "./FollowMe";
 import StilishImage from "./StilishImage";
-import Blueprint from '../../assets/Hero/Untitled-3.png'
+import Blueprint from '../../assets/Hero/Untitled1-2.jpg'
 
 const Hero = () => {
   return (
@@ -10,11 +10,11 @@ const Hero = () => {
       <FollowMe />
       <Navbar />
       <StilishImage />
-      <div className="h-[66rem] sm:h-[60rem] md:h-[41rem] lg:h-[45.5rem] xl:h-[133vh] border w-full overflow-hidden">
+      <div className="w-full h-[45.2vw] overflow-hidden">
         <img className="h-full w-full object-cover" src={BgImage} alt="hero image" />
       </div>
-      {/* <div className="w-full">
-        <img className="opacity-5" src={Blueprint} alt="" />
+      {/* <div className="w-full h-[45.2vw] overflow-hidden">
+        <img className="opacity-10" src={Blueprint} alt="" />
       </div> */}
       
     </div>

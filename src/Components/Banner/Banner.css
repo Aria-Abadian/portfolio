@@ -1,0 +1,52 @@
+/* Importing custom fonts */
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+
+/* Styling for the slider within the banner */
+.banner .slider {
+    transform-style: preserve-3d;
+    transform: perspective(70vw) rotateX(-16deg);
+}
+
+/* Styling for each item within the slider */
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0; /* Full size of the parent */
+    border: solid #012332;
+    transform: 
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(17vw);
+}
+
+/* Styling for images within each slider item */
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Styling for images within each slider item */
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Applying blur to the items based on their position */
+.banner .slider .item {
+    filter: blur(0px);
+    transition: filter 0.3s ease;
+}
+
+.banner .slider .item:nth-child(3),
+.banner .slider .item:nth-child(4),
+.banner .slider .item:nth-child(5) {
+    filter: blur(2px);
+    
+}
+
+.banner .slider .item:nth-child(1) {
+    filter: blur(0px);
+}

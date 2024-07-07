@@ -47,6 +47,7 @@ const BlogsSection = () => {
 
   return (
     <div className="h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw]">
+      <div><h3 className="text-primary-100 font-bold text-[3.5vw]">Blogs</h3></div>
         <div className="relative w-full mx-auto">
           <div className="flex justify-center space-x-[1vw] overflow-hidden">
             {blogs
@@ -66,8 +67,8 @@ const BlogsSection = () => {
                       {blog.excerpt}
                     </p>
                     <div className="flex justify-end items-end h-[5vw] pb-[.1vw]">
-                      <a href={blog.blogUrl}><button className="border border-secondary-500 text-secondary-500 text-[1.1vw]
-                      hover:bg-secondary-500 hover:text-primary-700 transition-colors duration-200 p-[.2vw] px-[.8vw] rounded-[.6vw] font-thin">Read More</button></a>
+                      <a href={blog.blogUrl}><button className="border font-semibold border-secondary-500 text-secondary-500 text-[1.1vw]
+                      hover:bg-secondary-500 hover:text-primary-700 transition-colors duration-200 p-[.2vw] px-[.8vw] rounded-[.6vw]">Read More</button></a>
                     </div>
                   </div>
                 </div>

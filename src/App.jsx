@@ -1,4 +1,5 @@
 import AboutMeSection from "./Components/AboutMeSection/AboutMeSection.jsx";
+import Banner from "./Components/Banner/Banner.jsx";
 import BlogsSection from "./Components/BlogsSection/BlogsSection.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
@@ -11,7 +12,8 @@ function App() {
       <Hero />
       <AboutMeSection />
       <SkillsSection />
-      <Projects />
+      <Banner />
+      {/* <Projects /> */}
       <BlogsSection />
       <Footer />
     </>

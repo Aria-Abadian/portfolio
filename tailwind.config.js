@@ -4,8 +4,16 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {
+      rotate:{
+        45: '45deg',
+        135: '135deg',
+        225: '225deg',
+        270: '270deg',
+        315: '315deg',
+      },
       screens: {
         '2xl': '1537px',
         '3xl': '1600px',
@@ -48,9 +56,11 @@ export default {
               800: "#404e56",
               900: "#313b42",
             },
+            
         }
       }
     },
   plugins: [],
+  
 }
 

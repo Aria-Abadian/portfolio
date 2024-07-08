@@ -1,11 +1,18 @@
-import Bluprint from "../../assets/AboutMeSection/aboutMeSection.jpg";
 import photo from "../../assets/AboutMeSection/donovan.jpg";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const AboutMeSection = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:1000,
+    })
+  },[]);
   return (
     <div className="h-[45.2vw] w-[98.9vw] flex" id="about">
       {/* photo section */}
-      <div className="h-full w-[50vw] z-10 flex items-center justify-end">
+      <div className="h-full w-[50vw] z-10 flex items-center justify-end"  data-aos='fade-right' >
         <div className="mr-[4vw] mt-[3vw] h-[39vw] w-[31vw] flex items-center">
           {/* forground photo */}
           <div className="w-[30.9vw] h-[32vw] overflow-hidden absolute z-10">
@@ -23,7 +30,7 @@ const AboutMeSection = () => {
       {/* end of photo section */}
 
       {/* text section */}
-      <div className="h-full w-[50vw] py-[4vw] z-10 flex flex-col gap-[1.5vw]">
+      <div className="h-full w-[50vw] py-[4vw] z-10 flex flex-col gap-[1.5vw]" data-aos='fade-up' >
         <h2 className="text-primary-100 font-bold text-[3.5vw]">About Me</h2>
         <p className="text-primary-200 w-[33vw] text-[1.5vw] font-semibold text-justify">
           Step into a world where cutting-edge design meets strategic

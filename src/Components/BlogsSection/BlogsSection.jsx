@@ -3,8 +3,16 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import img1 from "../../assets/BlogsSection/1716656825588.png";
 import img2 from "../../assets/BlogsSection/1718990735776.png";
 import img3 from "../../assets/BlogsSection/1720203092869.png";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const BlogsSection = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:1000,
+    })
+  },[]);
   const blogs = [
     {
       id: 1,
@@ -46,14 +54,14 @@ const BlogsSection = () => {
   };
 
   return (
-    <div className="h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw]">
-      <div><h3 className="text-primary-100 font-bold text-[3.5vw]">Blogs</h3></div>
+    <div className="h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw]" id="blogs">
+      <div data-aos='fade-down'><h3 className="text-primary-100 font-bold text-[3.5vw]">Blogs</h3></div>
         <div className="relative w-full mx-auto">
           <div className="flex justify-center space-x-[1vw] overflow-hidden">
             {blogs
               .slice(currentIndex * blogsPerPage, (currentIndex + 1) * blogsPerPage)
               .map((blog, index) => (
-                <div key={index} className="w-[25vw] h-[35vw] p-[.5vw]">
+                <div key={index} className="w-[25vw] h-[35vw] p-[.5vw]" data-aos='fade-left' data-aos-delay={`${index * 100}`}>
                   <div className="bg-gray-800 h-full rounded-[1vw] p-[1vw] border-[.2vw] border-primary-300">
                     <img
                       src={blog.image}

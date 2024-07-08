@@ -3,7 +3,9 @@ import BgImage from "../../assets/Hero/liquid-cheese.svg";
 import FollowMe from "./FollowMe";
 import StilishImage from "./StilishImage";
 
+
 const Hero = () => {
+
   return (
     <div className="overflow-hidden">
       <FollowMe />

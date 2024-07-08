@@ -10,11 +10,21 @@ import logo9 from "../../assets/SkillsSection/Icons/adobe-photoshop-2.svg";
 import logo10 from "../../assets/SkillsSection/Icons/tailwindcss.svg";
 import logo11 from "../../assets/SkillsSection/Icons/typescript.svg";
 import logo12 from "../../assets/SkillsSection/Icons/vue-9.svg";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const SkillsSection = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:1000,
+    })
+  },[]);
+
   return (
-    <div className=" h-[45.2vw] w-[98.9vw]">
+    <div className=" h-[45.2vw] w-[98.9vw]" id="skills" data-aos='fade-up'>
       <div className="flex h-full">
-        <div className="w-[50%] flex justify-center items-center">
+        <div className="w-[50%] flex justify-center items-center" data-aos='fade-right'>
           <div className="flex flex-col gap-[1.5vw]">
             <h2 className="text-primary-100 font-bold text-[3.5vw]">
               What do I use

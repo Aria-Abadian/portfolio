@@ -11,13 +11,13 @@ const AboutMeSection = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div className="md:h-[45.2vw] w-[98.9vw] flex flex-col items-center md:flex-row" id="about" ref={ref}>
+    <div className="md:h-[45.2vw] w-[98.9vw] mt-[10vw] md:mt-0 flex flex-col items-center md:flex-row" id="about" ref={ref}>
       {/* photo section */}
       <div
         className="md:h-full md:w-[50vw] z-10 flex items-center justify-end"
         data-aos="fade-right"
       >
-        <div className="md:mr-[4vw] mt-[21vw] md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[80vw] flex items-center">
+        <div className="md:mr-[4vw] mt-[21vw] mb-[10vw] md:mb-0 md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[80vw] flex items-center">
           {/* forground photo */}
           <div className="w-full rounded-tr-[20vw] rounded-bl-[20vw] md:rounded-none md:w-[30.9vw] h-full md:h-[32vw] overflow-hidden absolute z-10 mb-[15vw] md:mb-0">
             <img

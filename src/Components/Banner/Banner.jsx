@@ -2,10 +2,9 @@ import React, { useState, useEffect, forwardRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Banner.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import img1 from "../../assets/Banner/dragon_1.jpg";
-import img2 from "../../assets/Banner/dragon_2.jpg";
-import img3 from "../../assets/Banner/dragon_3.jpg";
-import img4 from "../../assets/Banner/dragon_4.jpg";
+import img1 from "../../assets/Banner/img-1.png";
+import img2 from "../../assets/Banner/img-2.png";
+import img3 from "../../assets/Banner/img-3.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -32,7 +31,7 @@ const Banner = forwardRef((props, ref) => {
     { position: 1, img: img1 },
     { position: 2, img: img2 },
     { position: 3, img: img3 },
-    { position: 4, img: img4 },
+    { position: 4, img: img1 },
     { position: 5, img: img2 },
     { position: 6, img: img3 },
   ];
@@ -59,9 +58,13 @@ const Banner = forwardRef((props, ref) => {
             <div
               key={index}
               id="outfocus"
-              className="item rounded-[.7vw] overflow-hidden active"
+              className="item rounded-[.7vw] overflow-hidden active flex justify-end
+              items-start"
               style={{ "--position": currentPosition + index }}
-            >
+              >
+              <button className="text-primary-100 mt-[1vw] mr-[1vw] bg-primary-800 
+              border-primary-400 border-[.15vw] absolute text-[1vw]
+              rounded-[.5vw] px-[1vw] shadow-2xl">Demo</button>
               <img src={item.img} alt="" />
             </div>
           ))}
@@ -79,10 +82,10 @@ const Banner = forwardRef((props, ref) => {
       </div>
       {/* end of round slider */}
       <div
-        className="md:w-[50vw] h-[75.3vw] md:h-full flex flex-col items-center p-[2vw] py-[10vw]"
+        className="md:w-[50vw] h-[75.3vw] md:h-full flex flex-col items-center p-[2vw] py-[10vw] md:py-[8vw]"
         data-aos="fade-up"
       >
-        <div className="h-full w-[80vw] md:w-[50vw] py-[4vw] z-10 flex flex-col gap-[1.5vw]">
+        <div className="h-full w-[80vw] md:w-[50vw] py-[4vw] md:py-0 z-10 flex flex-col gap-[1.5vw]">
           <h3 className="text-primary-100 font-bold text-[7vw] md:text-[3.5vw]">
             What I offer
           </h3>

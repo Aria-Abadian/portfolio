@@ -1,5 +1,5 @@
-import React from "react";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -8,38 +8,71 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-const Footer = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
-  const scrollToAbout = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToSkills = () => {
-    if (skillsRef.current) {
-      skillsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToDemo = () => {
-    if (demoRef.current) {
-      demoRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToBlogs = () => {
-    if (blogsRef.current) {
-      blogsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+const MobileMenu = ({ menuOpen, closeMenu }) => {
   const linksClasses = "hover:text-primary-100 transition-colors duration-200";
 
   return (
-    <div
-      className="md:h-[14.3vw] flex justify-center bg-primary-800 overflow-hidden"
-      id="contact"
-    >
-      <div className="w-[85vw] z-10 mt-[10vw] mb-[10vw] md:mb-0 md:mt-[1.3vw] md:py-[1.7vw] flex flex-col gap-[10vw] md:gap-0 items-center md:flex-row ">
+    <div className="absolute z-30 w-full h-full overflow-hidden">
+      <div
+        className={`w-full h-full bottom-0 bg-primary-800 gap-[7vw] 
+      md:hidden flex flex-col items-center justify-center ${
+        menuOpen ? "" : "translate-x-[100vw]"
+      }`}
+      >
+        {/* Quick Access Links */}
+        <div className="w-full h-[30vw] flex flex-col items-center">
+          <h3 className="text-[7vw] font-bold text-primary-100">
+            Quick Access
+          </h3>
+          <ul
+            className="w-full h-full flex items-center justify-center 
+          text-primary-300 gap-[3vw] font-semibold"
+          >
+            <li className="flex flex-col gap-[1vw] items-center">
+              <button
+                onClick={() => {
+                  about.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
+                }}
+                className={linksClasses}
+              >
+                About
+              </button>
+              <button
+                onClick={() => {
+                  skills.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
+                }}
+                className={linksClasses}
+              >
+                Skills
+              </button>
+            </li>
+            <li className="flex flex-col gap-[1vw] items-center">
+              <button
+                onClick={() => {
+                  demo.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
+                }}
+                className={linksClasses}
+              >
+                Projects
+              </button>
+              <button
+                onClick={() => {
+                  blogs.scrollIntoView({ behavior: "smooth" });
+                  closeMenu();
+                }}
+                className={linksClasses}
+              >
+                Blogs
+              </button>
+            </li>
+          </ul>
+        </div>
+        {/* End of Quick Access Links */}
         {/* Contact Me */}
-        <div className="w-full md:w-[28.3vw] order-2 md:order-1">
+        <div className="w-full h-[30vw] md:w-[28.3vw] order-2 md:order-1 ">
           <h3 className="text-[7vw] md:text-[2vw] font-bold text-primary-100 text-center">
             Contact Me
           </h3>
@@ -61,14 +94,16 @@ const Footer = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
                 href="tel:+989165634600"
               >
                 <HiOutlinePhone className="md:text-[1.7vw]" />
-                <p className="md:text-[1.3vw] font-semibold">+98 916 563 4600</p>
+                <p className="md:text-[1.3vw] font-semibold">
+                  +98 916 563 4600
+                </p>
               </a>
             </li>
           </ul>
         </div>
         {/* End of Contact Me */}
         {/* Social Media */}
-        <div className="w-full md:w-[30vw] flex flex-col items-center gap-[2vw] md:gap-[1vw] order-3 md:order-2">
+        <div className="w-full h-[40vw] md:w-[30vw] flex flex-col items-center gap-[2vw] md:gap-[1vw] order-3 md:order-2">
           <h3 className="text-[7vw] md:text-[2vw] font-bold text-primary-100">
             Social Media
           </h3>
@@ -110,34 +145,9 @@ const Footer = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
           </p>
         </div>
         {/* End of Social Media */}
-        {/* Quick Access Links */}
-        <div className="w-full md:w-[28.3vw] h-full flex flex-col items-center md:order-3">
-          <h3 className="text-[7vw] md:text-[2vw] font-bold text-primary-100">
-            Quick Access
-          </h3>
-          <ul className="w-full h-full flex items-center justify-center text-primary-300 md:text-[1.5vw] gap-[3vw] font-semibold">
-            <li className="flex flex-col gap-[1vw] items-center">
-              <button className={linksClasses} onClick={scrollToAbout}>
-                About
-              </button>
-              <button className={linksClasses} onClick={scrollToSkills}>
-                Skills
-              </button>
-            </li>
-            <li className="flex flex-col gap-[1vw] items-center">
-              <button className={linksClasses} onClick={scrollToDemo}>
-                Projects
-              </button>
-              <button className={linksClasses} onClick={scrollToBlogs}>
-                Blogs
-              </button>
-            </li>
-          </ul>
-        </div>
-         {/* End of Quick Access Links */}
       </div>
     </div>
   );
 };
 
-export default Footer;
+export default MobileMenu;

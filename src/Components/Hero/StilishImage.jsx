@@ -11,13 +11,15 @@ const StilishImage = () => {
   }, []);
 
   return (
-    <div className="md:w-[85vw] md:h-[38vw] absolute mt-[7vw] md:py-[1vw] md:pl-[4vw] flex flex-col items-center md:flex-row cursor-default">
+    <div className=" h-[95vh] md:w-[85vw] md:h-[38vw] absolute mt-[7vw] md:py-[1vw] md:pl-[4vw] flex flex-col
+     items-center md:flex-row cursor-default">
       {/* image sction */}
-      <div className="w-[100vw] h-[50vh] flex justify-center md:justify-start md:w-[33vw] md:h-[35vw] " data-aos='fade-right'>
+      <div className="w-[100vw] h-[41vh] flex justify-center md:justify-start md:w-[33vw] md:h-[35vw] " data-aos='fade-right'>
         {/* forground image */}
-        <div className="absolute w-[59vw] md:w-[30.4vw] h-[69vw] md:h-[28vw] mt-[6vw] md:mt-[3vw] ml-[2.6vw] overflow-hidden z-10">
+        <div className="absolute w-[60vw] md:w-[30.4vw] h-[60vw] md:h-[28vw] mt-[6vw] md:mt-[3vw] ml-[2.6vw] overflow-hidden z-10">
           <img
-            className="rounded-tr-[25vw] rounded-bl-[25vw] md:rounded-none md:-translate-y-[3vw] md:-translate-x-[0.2vw] object-cover h-full md:h-[40vw]"
+            className="rounded-tr-[25vw] rounded-bl-[25vw] md:rounded-none 
+            w-full md:-translate-y-[3vw] md:-translate-x-[0.2vw] object-cover h-full md:h-[40vw]"
             src={heroPhoto}
             alt="forground image"
           />
@@ -37,7 +39,7 @@ const StilishImage = () => {
 
       {/* text section */}
       <div className="md:w-[44.4vw] w-full h-[45vh] md:h-[35vw] flex flex-col items-center z-20">
-        <p className="text-secondary-500 text-[3.5vw] md:text-[1.5vw] my-[.5vw]" data-aos='fade-down'  data-aos-delay="100">
+        <p className="text-secondary-500 text-[3.5vw] md:text-[1.5vw] my-[.5vw] mt-[10vw] md:mt-0" data-aos='fade-down'  data-aos-delay="100">
           Front End Developer & Web Designer
         </p>
         <div className="w-full h-full flex flex-col justify-start md:justify-center gap-[1vw] md:gap-[3vw]">

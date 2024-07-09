@@ -1,5 +1,4 @@
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
-
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -15,8 +14,8 @@ const MobileMenu = ({ menuOpen, closeMenu }) => {
     <div className="absolute z-30 w-full h-full overflow-hidden">
       <div
         className={`w-full h-full bottom-0 bg-primary-800 gap-[7vw] 
-      md:hidden flex flex-col items-center justify-center ${
-        menuOpen ? "" : "translate-x-[100vw]"
+      md:hidden flex flex-col items-center justify-center transition-transform duration-300 ${
+        menuOpen ? "translate-x-0" : "translate-x-[100vw]"
       }`}
       >
         {/* Quick Access Links */}

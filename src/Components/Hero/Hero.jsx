@@ -5,6 +5,8 @@ import StilishImage from "./StilishImage";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useState } from "react";
+import { IoClose } from "react-icons/io5";
+
 
 
 
@@ -26,7 +28,7 @@ const Hero = () => {
       <div className="absolute md:hidden w-full h-[10vw] z-40 text-primary-100 flex items-center justify-end
       pr-[5vw] text-[7.5vw]">
         <button onClick={toggleMenu}>
-          <RiMenu3Fill />
+          { menuOpen ? <IoClose /> : <RiMenu3Fill />}
         </button>
       </div>
       <MobileMenu menuOpen={menuOpen} closeMenu={closeMenu}/>

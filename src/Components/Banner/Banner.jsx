@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Banner.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
@@ -9,7 +9,7 @@ import img4 from "../../assets/Banner/dragon_4.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Banner = () => {
+const Banner = forwardRef((props, ref) => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -23,7 +23,9 @@ const Banner = () => {
   };
 
   const handlePrevCard = () => {
-    setCurrentPosition((prevPosition) => (prevPosition - 1 + cardItems.length) % cardItems.length);
+    setCurrentPosition(
+      (prevPosition) => (prevPosition - 1 + cardItems.length) % cardItems.length
+    );
   };
 
   const cardItems = [
@@ -41,9 +43,11 @@ const Banner = () => {
   });
 
   return (
-    <div className="w-[98.9vw] h-[45.2vw] flex" id="demo" {...swipeHandlers}>
+    <div className="w-[98.9vw] h-[45.2vw] flex" {...swipeHandlers}>
       {/* round slider */}
       <div
+        ref={ref}
+        id="demo"
         className="flex flex-col-reverse banner relative overflow-hidden text-center h-[calc(100%-6vw)] w-[50vw] "
         data-aos="fade-right"
       >
@@ -92,6 +96,6 @@ const Banner = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Banner;

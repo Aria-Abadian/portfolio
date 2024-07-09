@@ -12,9 +12,9 @@ import logo11 from "../../assets/SkillsSection/Icons/typescript.svg";
 import logo12 from "../../assets/SkillsSection/Icons/vue-9.svg";
 import Aos from "aos";
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect,forwardRef } from "react";
 
-const SkillsSection = () => {
+const SkillsSection = forwardRef((props, ref) => {
   useEffect(()=>{
     Aos.init({
       duration:1000,
@@ -22,7 +22,7 @@ const SkillsSection = () => {
   },[]);
 
   return (
-    <div className=" h-[45.2vw] w-[98.9vw]" id="skills" data-aos='fade-up'>
+    <div className=" h-[45.2vw] w-[98.9vw]" id="skills" ref={ref} data-aos='fade-up'>
       <div className="flex h-full">
         <div className="w-[50%] flex justify-center items-center" data-aos='fade-right'>
           <div className="flex flex-col gap-[1.5vw]">
@@ -75,6 +75,6 @@ const SkillsSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export default SkillsSection;

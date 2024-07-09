@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="overflow-hidden">
       <FollowMe />
-      <Navbar />
+      <Navbar/>
       <StilishImage />
       <div className="w-full h-[45.2vw] overflow-hidden">
         <img

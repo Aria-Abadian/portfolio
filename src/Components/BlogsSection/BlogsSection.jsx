@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import img1 from "../../assets/BlogsSection/1716656825588.png";
 import img2 from "../../assets/BlogsSection/1718990735776.png";
@@ -7,7 +7,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-const BlogsSection = () => {
+const BlogsSection = forwardRef((props, ref) => {
   useEffect(()=>{
     Aos.init({
       duration:1000,
@@ -54,7 +54,7 @@ const BlogsSection = () => {
   };
 
   return (
-    <div className="h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw]" id="blogs">
+    <div className="h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw]" id="blogs" ref={ref}>
       <div data-aos='fade-down'><h3 className="text-primary-100 font-bold text-[3.5vw]">Blogs</h3></div>
         <div className="relative w-full mx-auto">
           <div className="flex justify-center space-x-[1vw] overflow-hidden">
@@ -113,6 +113,6 @@ const BlogsSection = () => {
         </div>
     </div>
   );
-};
+});
 
 export default BlogsSection;

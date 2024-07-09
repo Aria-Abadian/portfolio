@@ -4,13 +4,13 @@ const Navbar = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
     "transition-colors hover:text-primary-50 duration-200";
  
   return (
-    <div className="absolute w-[80vw] h-[7vw] flex z-20">
-      <div className="h-full w-[20vw] flex justify-center items-center">
-        <h1 className="text-secondary-500 text-[2vw] cursor-default">
+    <div className="absolute w-full md:w-[80vw] h-[6vh] md:h-[7vw] flex z-20">
+      <div className="h-full w-[30vw] md:w-[20vw] flex justify-center items-center">
+        <h1 className="text-secondary-500 text-[4vw] md:text-[2vw] cursor-default">
           Aria<span className="text-white">Abadian</span>
         </h1>
       </div>
-      <div className="h-full w-[60vw] font-semibold text-[1.2vw] flex items-center justify-center">
+      <div className="h-full w-[60vw] font-semibold text-[1.2vw] hidden md:flex items-center justify-center">
         <nav className="w-full h-full flex justify-between text-primary-200 items-center px-[10vw]">
           <button
             className={navItemsClasses}

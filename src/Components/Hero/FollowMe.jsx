@@ -12,7 +12,7 @@ const FollowMe = () => {
   const IconsClasses =
     "transition-colors hover:text-primary-50 duration-200 cursor-pointer";
   return (
-    <div className="absolute w-full h-full flex justify-end z-20"  data-aos='fade-down' >
+    <div className="absolute w-full h-full hidden md:flex justify-end z-20"  data-aos='fade-down' >
       <div className="w-[7vw] h-[22.7vw] mt-[3.2vw] mr-[6.3vw]">
         <div className="w-full h-[18.2vw] bg-primary-600">
           {/* start of icons containet */}

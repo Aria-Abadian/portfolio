@@ -43,16 +43,16 @@ const Banner = forwardRef((props, ref) => {
   });
 
   return (
-    <div className="w-[98.9vw] h-[45.2vw] flex" {...swipeHandlers}>
+    <div className="w-[98.9vw] md:h-[45.2vw] flex flex-col md:flex-row" {...swipeHandlers}>
       {/* round slider */}
       <div
         ref={ref}
         id="demo"
-        className="flex flex-col-reverse banner relative overflow-hidden text-center h-[calc(100%-6vw)] w-[50vw] "
+        className="flex flex-col-reverse banner relative overflow-hidden text-center h-[75.3vw] w-full md:h-[calc(100%-6vw)] md:w-[50vw]"
         data-aos="fade-right"
       >
         <div
-          className="slider absolute w-[15vw] h-[20vw] top-[20%] left-[calc(50%-7vw)] z-[2]"
+          className="slider absolute w-[25vw] md:w-[15vw] h-[33vw] md:h-[20vw] top-[15%] md:top-[20%] left-[36vw] md:left-[calc(50%-7vw)] z-[2]"
           style={{ "--quantity": cardItems.length }}
         >
           {cardItems.map((item, index) => (
@@ -66,7 +66,8 @@ const Banner = forwardRef((props, ref) => {
             </div>
           ))}
         </div>
-        <div className="ml-[1.6vw] flex justify-center gap-[1vw] text-[1.5vw]">
+        {/* navigation arrows */}
+        <div className="mx-auto flex justify-center gap-[5vw] md:gap-[1vw] text-[5vw] mb-[4vw] md:mb-0 md:text-[1.5vw]">
           <button onClick={handlePrevCard}>
             <FaArrowLeft className="text-primary-300" />
           </button>
@@ -74,17 +75,18 @@ const Banner = forwardRef((props, ref) => {
             <FaArrowRight className="text-secondary-500" />
           </button>
         </div>
+        {/* end of navigation arrows */}
       </div>
       {/* end of round slider */}
       <div
-        className="w-[50vw] h-full flex flex-col items-center p-[2vw] py-[10vw]"
+        className="md:w-[50vw] h-[75.3vw] md:h-full flex flex-col items-center p-[2vw] py-[10vw]"
         data-aos="fade-up"
       >
-        <div>
-          <h3 className="text-primary-100 font-bold text-[3.5vw]">
+        <div className="h-full w-[80vw] md:w-[50vw] py-[4vw] z-10 flex flex-col gap-[1.5vw]">
+          <h3 className="text-primary-100 font-bold text-[7vw] md:text-[3.5vw]">
             What I offer
           </h3>
-          <p className="text-primary-200 w-[33vw] text-[1.5vw] font-semibold text-justify">
+          <p className="text-primary-200 md:w-[33vw] text-[3vw] md:text-[1.5vw] font-semibold text-justify">
             I specialize in creating responsive websites that adapt seamlessly
             to any device, regardless of screen size. With a focus on user
             interactivity and exceptional user experience (UX), I leverage the

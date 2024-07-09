@@ -11,7 +11,7 @@ const Hero = () => {
       <FollowMe />
       <Navbar/>
       <StilishImage />
-      <div className="w-full h-[45.2vw] overflow-hidden">
+      <div className="w-full h-[100vh] md:h-[45.2vw] overflow-hidden">
         <img
           className="h-full w-full object-cover"
           src={BgImage}

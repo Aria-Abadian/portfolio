@@ -11,20 +11,20 @@ const StilishImage = () => {
   }, []);
 
   return (
-    <div className="w-[85vw] h-[38vw] absolute mt-[7vw] py-[1vw] pl-[4vw] flex cursor-default">
+    <div className="md:w-[85vw] md:h-[38vw] absolute mt-[7vw] md:py-[1vw] md:pl-[4vw] flex flex-col items-center md:flex-row cursor-default">
       {/* image sction */}
-      <div className=" w-[33vw] h-[35vw]" data-aos='fade-right'>
+      <div className="w-[100vw] h-[50vh] flex justify-center md:justify-start md:w-[33vw] md:h-[35vw] " data-aos='fade-right'>
         {/* forground image */}
-        <div className="absolute w-[30.4vw] h-[28vw] mt-[3vw] ml-[2.6vw] overflow-hidden z-10">
+        <div className="absolute w-[59vw] md:w-[30.4vw] h-[69vw] md:h-[28vw] mt-[6vw] md:mt-[3vw] ml-[2.6vw] overflow-hidden z-10">
           <img
-            className="-translate-y-[3vw] -translate-x-[0.2vw] object-cover h-[40vw]"
+            className="rounded-tr-[25vw] rounded-bl-[25vw] md:rounded-none md:-translate-y-[3vw] md:-translate-x-[0.2vw] object-cover h-full md:h-[40vw]"
             src={heroPhoto}
             alt="forground image"
           />
         </div>
         {/* end of forground image */}
         {/* background image */}
-        <div className="h-full w-[30vw] overflow-hidden z-0">
+        <div className="hidden md:flex h-full w-[30vw] overflow-hidden z-0">
           <img
             className="h-[40vw] translate-x-[2.5vw] object-cover grayscale brightness-50"
             src={heroPhoto}
@@ -36,12 +36,12 @@ const StilishImage = () => {
       {/* end of image sction */}
 
       {/* text section */}
-      <div className="w-[44.4vw] h-[35vw] flex flex-col items-center z-20">
-        <p className="text-secondary-500 text-[1.5vw] my-[.5vw]" data-aos='fade-down'  data-aos-delay="100">
+      <div className="md:w-[44.4vw] w-full h-[45vh] md:h-[35vw] flex flex-col items-center z-20">
+        <p className="text-secondary-500 text-[3.5vw] md:text-[1.5vw] my-[.5vw]" data-aos='fade-down'  data-aos-delay="100">
           Front End Developer & Web Designer
         </p>
-        <div className="w-full h-full flex flex-col justify-center gap-[3vw]">
-          <h1 className="text-primary-50 text-[4.5vw] font-semibold -translate-x-[1.5vw]" data-aos='fade-up'  data-aos-delay="200">
+        <div className="w-full h-full flex flex-col justify-start md:justify-center gap-[1vw] md:gap-[3vw]">
+          <h1 className="flex justify-center text-center md:text-left text-primary-50 md:justify-normal text-[6.5vw] md:text-[4.5vw] font-semibold md:-translate-x-[1.5vw]" data-aos='fade-up'  data-aos-delay="200">
             Bringing Your Vision
             <br />
             to the Screen
@@ -49,7 +49,7 @@ const StilishImage = () => {
             One Pixel at a Time.
           </h1>
           <div className="flex justify-center" data-aos='fade-up'  data-aos-delay="300">
-            <p className="text-primary-50 text-[1.2vw] font-semibold w-[40vw]">
+            <p className="text-primary-50 text-[3.5vw] md:text-[1.2vw] text-center leading-loose md:leading-normal md:text-left font-semibold w-[85vw] md:w-[40vw]">
               Your imagination is the canvas, and my expertise is the brush.
               With a fusion of innovative design and cutting-edge technology, I
               pledge to bring your digital dreams to life.{" "}

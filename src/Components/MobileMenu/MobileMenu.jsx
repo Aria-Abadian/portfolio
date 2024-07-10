@@ -6,12 +6,33 @@ import {
   FaTelegramPlane,
   FaWhatsapp,
 } from "react-icons/fa";
+import { RiMenu3Fill } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
+import { useState } from "react";
 
-const MobileMenu = ({ menuOpen, closeMenu }) => {
+const MobileMenu = () => {
   const linksClasses = "hover:text-primary-100 transition-colors duration-200";
+
+  const [menuOpen, SetMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    SetMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    SetMenuOpen(false);
+  };
 
   return (
     <div className="absolute z-30 w-full h-full overflow-hidden">
+      <div
+        className="absolute md:hidden w-full h-[10vw] z-40 text-primary-100 flex items-center justify-end
+      pr-[5vw] text-[7.5vw]"
+      >
+        <button onClick={toggleMenu}>
+          {menuOpen ? <IoClose /> : <RiMenu3Fill />}
+        </button>
+      </div>
       <div
         className={`w-full h-full bottom-0 bg-primary-800 gap-[7vw] 
       md:hidden flex flex-col items-center justify-center transition-transform duration-300 ${

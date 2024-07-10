@@ -5,6 +5,7 @@ import BlogsSection from "./Components/BlogsSection/BlogsSection.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
 import SkillsSection from "./Components/SkillsSection/SkillsSection.jsx";
+import MobileMenu from "./Components/MobileMenu/MobileMenu.jsx";
 
 function App() {
   const aboutRef = useRef(null);
@@ -14,12 +15,18 @@ function App() {
 
   return (
     <>
+      <MobileMenu />
       <Hero />
       <AboutMeSection ref={aboutRef} />
       <SkillsSection ref={skillsRef} />
       <Banner ref={demoRef} />
-      <BlogsSection ref={blogsRef}/>
-      <Footer aboutRef={aboutRef} skillsRef={skillsRef} demoRef={demoRef} blogsRef={blogsRef} />
+      <BlogsSection ref={blogsRef} />
+      <Footer
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        demoRef={demoRef}
+        blogsRef={blogsRef}
+      />
     </>
   );
 }

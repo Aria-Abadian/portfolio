@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div className="overflow-hidden">
       <FollowMe />
-      <Navbar/>
+      {/* <Navbar/> */}
       
       
       <StilishImage />

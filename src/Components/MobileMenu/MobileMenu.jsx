@@ -24,9 +24,9 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="absolute z-30 w-full h-full overflow-hidden">
+    <div className="absolute md:hidden z-30 w-full h-full overflow-hidden">
       <div
-        className="absolute md:hidden w-full h-[10vw] z-40 text-primary-100 flex items-center justify-end
+        className="absolute w-full h-[10vw] z-40 text-primary-100 flex items-center justify-end
       pr-[5vw] text-[7.5vw]"
       >
         <button onClick={toggleMenu}>

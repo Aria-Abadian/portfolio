@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 import Hero from "./Components/Hero/Hero.jsx";
 import SkillsSection from "./Components/SkillsSection/SkillsSection.jsx";
 import MobileMenu from "./Components/MobileMenu/MobileMenu.jsx";
+import Navbar from "./Components/Hero/Navbar.jsx";
 
 function App() {
   const aboutRef = useRef(null);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <MobileMenu />
       <Hero />
       <AboutMeSection ref={aboutRef} />

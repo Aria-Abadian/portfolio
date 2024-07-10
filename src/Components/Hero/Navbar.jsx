@@ -1,7 +1,7 @@
 
 
 
-const Navbar = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
+const Navbar = () => {
   const navItemsClasses =
     "transition-colors hover:text-primary-50 duration-200";
   

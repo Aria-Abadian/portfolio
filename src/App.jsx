@@ -1,33 +1,18 @@
-import React, { useRef } from "react";
-
-import Footer from "./Components/Footer/Footer.jsx";
-import MobileMenu from "./Components/MobileMenu/MobileMenu.jsx";
-import Navbar from "./Components/Hero/Navbar.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
+import Post from "./Pages/Blogs/Post.jsx";
+import BlogsList from "./Pages/Blogs/BlogsList.jsx";
 
 function App() {
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const demoRef = useRef(null);
-  const blogsRef = useRef(null);
-
   return (
     <>
-      <Navbar />
-      <MobileMenu />
-      <Home
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        demoRef={demoRef}
-        blogsRef={blogsRef}
-      />
-      
-      <Footer
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        demoRef={demoRef}
-        blogsRef={blogsRef}
-      />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/post" element={<BlogsList />} />
+          <Route path="post/:id" element={<Post />} />
+        </Routes>
+      </Router>
     </>
   );
 }

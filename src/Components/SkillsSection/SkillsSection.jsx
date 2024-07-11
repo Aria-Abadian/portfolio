@@ -6,10 +6,6 @@ import logo5 from "../../assets/SkillsSection/Icons/vue-9.svg";
 import logo6 from "../../assets/SkillsSection/Icons/html-1.svg";
 import logo7 from "../../assets/SkillsSection/Icons/bootstrap-5-1.svg";
 import logo8 from "../../assets/SkillsSection/Icons/typescript.svg";
-import logo9 from "../../assets/SkillsSection/Icons/adobe-photoshop-2.svg";
-import logo10 from "../../assets/SkillsSection/Icons/tailwindcss.svg";
-import logo11 from "../../assets/SkillsSection/Icons/typescript.svg";
-import logo12 from "../../assets/SkillsSection/Icons/vue-9.svg";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect,forwardRef } from "react";
@@ -43,31 +39,31 @@ const SkillsSection = forwardRef((props, ref) => {
         </div>
         <div className="md:w-[50vw] w-full h-[75.3vw] md:h-full md:relative">
           <ul className="w-full h-[50vw] md:h-full md:pt-[5vw] md:static flex justify-center items-center md:items-start md:justify-normal">
-            <div className="h-[48vw] w-[48vw] md:w-[29vw] md:h-[29vw] border border-primary-400 absolute rounded-full md:ml-[10.5vw] mt-[25.5vw] md:mt-[2vw] flex">
+            <div className="h-[48vw] w-[48vw] md:w-[29vw] md:h-[29vw] border border-primary-400 absolute rounded-full md:ml-[7.9vw] mt-[25.5vw] md:mt-[2vw] flex">
               <div className="w-[20vw] h-[20vw] md:w-[15vw] md:h-[15vw] border border-primary-400 rounded-full mx-auto my-auto"></div>
             </div>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-0">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-0">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw]" src={logo1} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-45">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-45">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-45" src={logo2} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-90">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-90">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-90" src={logo3} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-135">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-135">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-135" src={logo4} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-180">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-180">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-180" src={logo5} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-225">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-225">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-225" src={logo6} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-270">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-270">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-270" src={logo7} alt="" />
             </li>
-            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[46%] origin-bottom transform rotate-315">
+            <li className="h-[28.5vw] md:h-[17vw] w-[8vw] md:w-[5vw] absolute md:left-[40%] origin-bottom transform rotate-315">
               <img className="w-[8vw] md:w-[5vw] h-[8vw] md:h-[5vw] -rotate-315" src={logo8} alt="" />
             </li>
           </ul>

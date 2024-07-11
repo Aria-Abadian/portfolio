@@ -42,7 +42,6 @@ const StilishImage = () => {
         <p className="text-secondary-500 text-[3.5vw] md:text-[1.5vw] my-[.5vw] mt-[10vw] md:mt-0" data-aos='fade-down'  data-aos-delay="100">
           Front End Developer & Web Designer
         </p>
-        <div className="w-full h-full flex flex-col justify-start md:justify-center gap-[1vw] md:gap-[3vw]">
           <h1 className="flex justify-center text-center md:text-left text-primary-50 md:justify-normal text-[6.5vw] md:text-[4.5vw] font-semibold md:-translate-x-[1.5vw]" data-aos='fade-up'  data-aos-delay="200">
             Bringing Your Vision
             <br />
@@ -50,6 +49,7 @@ const StilishImage = () => {
             <br />
             One Pixel at a Time.
           </h1>
+        <div className="w-full h-full flex flex-col justify-start md:justify-center gap-[1vw] md:gap-[3vw]">
           <div className="flex justify-center" data-aos='fade-up'  data-aos-delay="300">
             <p className="text-primary-50 text-[3.5vw] md:text-[1.2vw] text-center leading-loose md:leading-normal md:text-left font-semibold w-[85vw] md:w-[40vw]">
               Your imagination is the canvas, and my expertise is the brush.

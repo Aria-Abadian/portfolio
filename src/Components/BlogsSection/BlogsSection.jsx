@@ -1,8 +1,8 @@
 import React, { forwardRef, useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import img1 from "../../assets/BlogsSection/1716656825588.png";
-import img2 from "../../assets/BlogsSection/1718990735776.png";
-import img3 from "../../assets/BlogsSection/1720203092869.png";
+import img2 from "../../assets/BlogsSection/1720203092869.png";
+import img3 from "../../assets/BlogsSection/1718990735776.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ const BlogsSection = forwardRef((props, ref) => {
       image: img1,
       excerpt:
         "In the realm of frontend development, the mobile-first approach has transitioned from a forward-thinking strategy to a fundamental necessity. As we navigate through the digital age, where mobile devices are ubiquitous, starting with mobile-first design is not just a recommendation; it's imperative for success.",
-      blogUrl: "#",
+      blogUrl: "/post/1",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const BlogsSection = forwardRef((props, ref) => {
       image: img2,
       excerpt:
         "In the ever-evolving landscape of front-end development, ReactJS stands out as a beacon of efficiency and scalability. As developers, we strive to create code that's not only functional but also reusable and maintainable. Here are some key standards to ensure your ReactJS components are up to par",
-      blogUrl: "#",
+      blogUrl: "post/2",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const BlogsSection = forwardRef((props, ref) => {
       image: img3,
       excerpt:
         "In the ever-evolving landscape of front-end development, ReactJS stands out as a beacon of efficiency and scalability. As developers, we strive to create code that's not only functional but also reusable and maintainable. Here are some key standards to ensure your ReactJS components are up to par",
-      blogUrl: "#",
+      blogUrl: "post/3",
     },
   ];
 

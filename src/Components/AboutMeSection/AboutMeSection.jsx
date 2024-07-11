@@ -14,7 +14,7 @@ const AboutMeSection = forwardRef((props, ref) => {
     <div className="md:h-[45.2vw] w-[98.9vw] mt-[10vw] md:mt-0 flex flex-col items-center md:flex-row" id="about" ref={ref}>
       {/* photo section */}
       <div
-        className="md:h-full md:w-[50vw] z-10 flex items-center justify-end"
+        className="md:h-full md:w-[46vw] z-10 flex items-center justify-end"
         data-aos="fade-right"
       >
         <div className="md:mr-[4vw] mt-[21vw] mb-[10vw] md:mb-0 md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[80vw] flex items-center">
@@ -42,7 +42,7 @@ const AboutMeSection = forwardRef((props, ref) => {
 
       {/* text section */}
       <div
-        className="h-full w-[80vw] md:w-[50vw] py-[4vw] z-10 flex flex-col gap-[1.5vw]"
+        className="h-full w-[80vw] md:w-[50vw] py-[4vw] z-10 flex items-center flex-col gap-[1.5vw]"
         data-aos="fade-up"
       >
         <h2 className="text-primary-100 font-bold text-[7vw] md:text-[3.5vw]">About Me</h2>

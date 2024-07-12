@@ -1,11 +1,10 @@
 import React, { forwardRef, useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import img1 from "../../assets/BlogsSection/1716656825588.png";
-import img2 from "../../assets/BlogsSection/1720203092869.png";
-import img3 from "../../assets/BlogsSection/1718990735776.png";
+import { Posts as blogs } from "../../Pages/Blogs/Posts.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const BlogsSection = forwardRef((props, ref) => {
   useEffect(() => {
@@ -13,32 +12,6 @@ const BlogsSection = forwardRef((props, ref) => {
       duration: 1000,
     });
   }, []);
-  const blogs = [
-    {
-      id: 1,
-      title: "Embracing Mobile-First Design",
-      image: img1,
-      excerpt:
-        "In the realm of frontend development, the mobile-first approach has transitioned from a forward-thinking strategy to a fundamental necessity. As we navigate through the digital age, where mobile devices are ubiquitous, starting with mobile-first design is not just a recommendation; it's imperative for success.",
-      blogUrl: "/post/1",
-    },
-    {
-      id: 2,
-      title: "Elevating ReactJS Development",
-      image: img2,
-      excerpt:
-        "In the ever-evolving landscape of front-end development, ReactJS stands out as a beacon of efficiency and scalability. As developers, we strive to create code that's not only functional but also reusable and maintainable. Here are some key standards to ensure your ReactJS components are up to par",
-      blogUrl: "post/2",
-    },
-    {
-      id: 3,
-      title: "Elevating ReactJS Development",
-      image: img3,
-      excerpt:
-        "In the ever-evolving landscape of front-end development, ReactJS stands out as a beacon of efficiency and scalability. As developers, we strive to create code that's not only functional but also reusable and maintainable. Here are some key standards to ensure your ReactJS components are up to par",
-      blogUrl: "post/3",
-    },
-  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const blogsPerPage = 3;
@@ -80,7 +53,7 @@ const BlogsSection = forwardRef((props, ref) => {
               >
                 <div className="bg-gray-800 h-full rounded-[1vw] p-[3vw] pb-0 md:p-[1vw] border-[.5vw] md:border-[.2vw] border-primary-300 mb-[10vw] md:mb-0">
                   <img
-                    src={blog.image}
+                    src={blog.img}
                     alt={blog.title}
                     className="w-full h-[40vw] md:h-[12vw] object-cover rounded-t-[.5vw]"
                   />
@@ -89,17 +62,16 @@ const BlogsSection = forwardRef((props, ref) => {
                       {blog.title}
                     </h2>
                     <p className=" md:m-0 md:mt-[.5vw] text-primary-100 text-justify text-[3vw] md:text-[1vw]">
-                      {blog.excerpt}
+                      {blog.excerpt.slice(0, 300) + "..."}
                     </p>
                     <div className="flex justify-end items-end h-[10vw] md:h-[5vw] pb-[.1vw]">
-                      <a href={blog.blogUrl}>
-                        <button
-                          className="border font-semibold border-secondary-500 text-secondary-500 text-[3vw] md:text-[1.1vw]
+                      <NavLink
+                        className="font-semibold text-secondary-500 text-[3vw] md:text-[1.1vw]
                       hover:bg-secondary-500 hover:text-primary-700 transition-colors duration-200 p-[.2vw] px-[.8vw] rounded-[.6vw]"
-                        >
-                          Read More
-                        </button>
-                      </a>
+                        to={`/post/${index+1}`}
+                      >
+                        Read More
+                      </NavLink>
                     </div>
                   </div>
                 </div>

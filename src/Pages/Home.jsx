@@ -7,6 +7,7 @@ import SkillsSection from "../Components/SkillsSection/SkillsSection.jsx";
 import Footer from "../Components/Footer/Footer.jsx";
 import MobileMenu from "../Components/MobileMenu/MobileMenu.jsx";
 import Navbar from "../Components/Hero/Navbar.jsx";
+import DemoProjects from "../Components/DemoProjects/DemoProjects.jsx";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Hero />
       <AboutMeSection ref={aboutRef} />
       <SkillsSection ref={skillsRef} />
+      <DemoProjects />
       {/* <Banner ref={demoRef} /> */}
       <BlogsSection ref={blogsRef} />
       <Footer

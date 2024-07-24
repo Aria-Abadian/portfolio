@@ -28,7 +28,7 @@ const BlogsSection = forwardRef((props, ref) => {
 
   return (
     <div
-      className="md:h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw] "
+      className="md:h-[45.2vw] w-[98.9vw] flex flex-col justify-center items-center gap-[2vw] mt-[20vw] md:mt-0"
       id="blogs"
       ref={ref}
     >

@@ -15,6 +15,7 @@ export default {
         315: '315deg',
       },
       screens: {
+        'xsm':'375px',
         '2xl': '1537px',
         '3xl': '1600px',
         // => @media (min-width: 1536px) { ... }

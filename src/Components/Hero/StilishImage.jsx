@@ -1,4 +1,4 @@
-import heroPhoto from "../../assets/Hero/hero.jpg";
+import heroPhoto from "../../assets/Hero/hero.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -11,10 +11,10 @@ const StilishImage = () => {
   }, []);
 
   return (
-    <div className=" h-[95vh] md:w-[85vw] md:h-[38vw] absolute mt-[7vw] md:py-[1vw] md:pl-[4vw] flex flex-col
+    <div className="pt-[10vw] xsm:pt-0 h-[95vh] md:w-[85vw] md:h-[38vw] absolute mt-[7vw] md:py-[1vw] md:pl-[4vw] flex flex-col
      items-center md:flex-row cursor-default">
       {/* image sction */}
-      <div className="w-[100vw] h-[41vh] flex justify-center md:justify-start md:w-[33vw] md:h-[35vw] " data-aos='fade-right'>
+      <div className="w-[100vw] h-[35vh] xsm:h-[70vw] flex justify-center md:justify-start md:w-[33vw] md:h-[35vw] " data-aos='fade-right'>
         {/* forground image */}
         <div className="absolute w-[60vw] md:w-[30.4vw] h-[60vw] md:h-[28vw] mt-[6vw] md:mt-[3vw] ml-[2.6vw] overflow-hidden z-10">
           <img

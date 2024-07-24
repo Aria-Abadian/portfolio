@@ -1,5 +1,5 @@
 import React, { useEffect, forwardRef } from "react";
-import photo from "../../assets/AboutMeSection/donovan.jpg";
+import photo from "../../assets/AboutMeSection/aboutMe.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -17,20 +17,20 @@ const AboutMeSection = forwardRef((props, ref) => {
         className="md:h-full md:w-[46vw] z-10 flex items-center justify-end"
         data-aos="fade-right"
       >
-        <div className="md:mr-[4vw] mt-[21vw] mb-[10vw] md:mb-0 md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[80vw] flex items-center">
+        <div className="md:mr-[4vw] mt-[21vw] mb-[10vw] md:mb-0 md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[60vw] flex items-center">
           {/* forground photo */}
-          <div className="w-full rounded-tr-[20vw] rounded-bl-[20vw] md:rounded-none md:w-[30.9vw] h-full md:h-[32vw] overflow-hidden absolute z-10 mb-[15vw] md:mb-0">
+          <div className=" w-full rounded-tr-[20vw] rounded-bl-[20vw] md:rounded-none md:w-[30.9vw] h-full md:h-[32vw] overflow-hidden absolute z-10 mb-[15vw] md:mb-0">
             <img
-              className="object-cover h-full md:h-[39vw] md:-translate-x-[1.4vw] md:-translate-y-[3.5vw]"
+              className="object-cover h-full md:h-[44vw] md:-translate-x-[.5vw] md:-translate-y-[3.9vw]"
               src={photo}
               alt="foreground photo"
             />
           </div>
           {/* end of foreground photo */}
           {/* background photo */}
-          <div className="w-[28vw] h-full hidden md:flex">
+          <div className=" overflow-hidden w-[28vw] h-full hidden md:flex">
             <img
-              className="h-[39vw] object-cover brightness-50"
+              className="h-[44vw] object-cover brightness-50"
               src={photo}
               alt="background photo"
             />

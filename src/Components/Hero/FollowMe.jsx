@@ -26,7 +26,7 @@ const FollowMe = () => {
             <a href="https://www.linkedin.com/in/aria-abadian-262519192">
               <FaLinkedin className={IconsClasses} />
             </a>
-            <a href="https://github.com/iamelite">
+            <a href="https://github.com/aria-abadian">
               <FaGithub className={IconsClasses} />
             </a>
           </div>

@@ -90,7 +90,7 @@ const Footer = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
               </a>
             </li>
             <li>
-              <a className={linksClasses} href="https://github.com/iamelite">
+              <a className={linksClasses} href="https://github.com/aria-abadian">
                 <FaGithub />
               </a>
             </li>

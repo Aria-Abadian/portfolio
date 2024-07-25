@@ -3,8 +3,8 @@ import img1 from "../../assets/Banner/img1.webp";
 import img2 from "../../assets/Banner/img2.webp";
 const DemoProjects = () => {
   return (
-    <div className="flex flex-col gap-[2vw] w-full md:h-[45.2vw]">
-        <h3 className=" text-left ml-[12vw] md:m-0 text-primary-100 font-bold text-[7vw] md:text-[3.5vw] md:text-center">Other Websites</h3>
+    <div className="flex flex-col mt-[30vw] md:mt-0 gap-[2vw] w-full md:h-[45.2vw]">
+        <h3 className=" text-center text-primary-100 font-bold text-[7vw] md:text-[3.5vw] md:text-center">Other Websites</h3>
       <div className="flex flex-col md:flex-row justify-center items-center gap-[10vw] md:gap-[2vw]">
           
           <div className=" flex justify-center items-center md:w-[24vw] rounded-[2vw] md:rounded-[1vw] w-[76vw] md:h-[35vw] border-[.2vw] border-primary-300 overflow-hidden">
@@ -22,10 +22,6 @@ const DemoProjects = () => {
             <img src={img2} alt="demo website" />
           </div>
           
-          
-          {/* <div className=" w-[24vw] rounded-[1vw] h-[35vw] border-[.2vw] border-primary-300 overflow-hidden">
-            <img src={img2} alt="demo website" />
-          </div> */}
       </div>
     </div>
   );

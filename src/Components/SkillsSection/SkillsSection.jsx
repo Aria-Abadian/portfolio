@@ -22,10 +22,10 @@ const SkillsSection = forwardRef((props, ref) => {
       <div className="flex flex-col-reverse md:flex-row md:h-full md:mt-0">
         <div className="md:mt-0 md:w-[50%] flex justify-center items-center h-[75.3vw] md:h-full" data-aos='fade-right'>
           <div className="h-full w-[75vw] md:w-[50vw] py-[4vw] z-10 flex flex-col md:items-center gap-[1.5vw] ">
-            <h2 className="text-primary-100 font-bold text-[7vw] md:text-[3.5vw]">
+            <h2 className="text-primary-100 font-bold text-center md:text-left text-[8vw] md:text-[3.5vw]">
               What do I use
             </h2>
-            <p className="text-primary-200 md:w-[33vw] text-[3vw] md:text-[1.5vw] font-semibold text-justify">
+            <p className="text-primary-200 md:w-[33vw] text-[4vw] md:text-[1.5vw] font-semibold text-justify">
               As a front-end developer, I thrive on innovation. My commitment
               lies in harnessing the latest front-end technologies, frameworks,
               and libraries to create exceptional user experiences. I embrace

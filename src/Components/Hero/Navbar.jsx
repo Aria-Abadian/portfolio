@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="absolute w-full md:w-[80vw] h-[6vh] md:h-[7vw] flex z-20 ">
       
       <div className="h-full w-[30vw] md:w-[20vw] flex justify-center items-center">
-        <h1 className="pl-[10vw] pt-[2vw] md:p-0 text-secondary-500 text-[5vw] md:text-[2vw] cursor-default">
+        <h1 className="pl-[20vw] pt-[2vw] md:p-0 text-secondary-500 text-[7vw] md:text-[2vw] cursor-default">
           Aria<span className="text-white">Abadian</span>
         </h1>
       </div>

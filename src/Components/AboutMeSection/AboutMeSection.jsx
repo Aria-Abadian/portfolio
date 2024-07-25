@@ -1,5 +1,5 @@
 import React, { useEffect, forwardRef } from "react";
-import photo from "../../assets/AboutMeSection/aboutMe.webp";
+import photo from "../../assets/AboutMeSection/heroImg.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,18 +19,9 @@ const AboutMeSection = forwardRef((props, ref) => {
       >
         <div className="md:mr-[4vw] mt-[21vw] mb-[10vw] md:mb-0 md:mt-[3vw] md:h-[39vw] h-[60vw] md:w-[31vw] w-[60vw] flex items-center">
           {/* forground photo */}
-          <div className=" w-full rounded-tr-[20vw] rounded-bl-[20vw] md:rounded-none md:w-[30.9vw] h-full md:h-[32vw] overflow-hidden absolute z-10 mb-[15vw] md:mb-0">
+          <div className=" md:w-[28vw] h-full flex justify-center items-center">
             <img
-              className="object-cover h-full md:h-[44vw] md:-translate-x-[.5vw] md:-translate-y-[3.9vw]"
-              src={photo}
-              alt="foreground photo"
-            />
-          </div>
-          {/* end of foreground photo */}
-          {/* background photo */}
-          <div className=" overflow-hidden w-[28vw] h-full hidden md:flex">
-            <img
-              className="h-[44vw] object-cover brightness-50"
+              className="-translate-y-[3vw] object-cover"
               src={photo}
               alt="background photo"
             />
@@ -45,8 +36,8 @@ const AboutMeSection = forwardRef((props, ref) => {
         className="h-full w-[80vw] md:w-[50vw] py-[4vw] z-10 flex items-center flex-col gap-[1.5vw]"
         data-aos="fade-up"
       >
-        <h2 className="text-primary-100 font-bold text-[7vw] md:text-[3.5vw]">About Me</h2>
-        <p className="text-primary-200 md:w-[33vw] text-[3vw] md:text-[1.5vw] font-semibold text-justify">
+        <h2 className="text-primary-100 font-bold text-[8vw] md:text-[3.5vw]">About Me</h2>
+        <p className="text-primary-200 md:w-[33vw] text-[4vw] md:text-[1.5vw] font-semibold text-justify">
           Step into a world where cutting-edge design meets strategic
           optimization. I offer a unique blend of front-end development and web
           design, infused with a mastery of internal SEO to ensure your digital

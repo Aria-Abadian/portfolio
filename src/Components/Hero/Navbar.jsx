@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
       
       <div className="h-full w-[30vw] md:w-[20vw] flex justify-center items-center">
         <h1 className="pl-[20vw] pt-[2vw] md:p-0 text-secondary-500 text-[7vw] md:text-[2vw] cursor-default">
-          Aria<span className="text-white">Abadian</span>
+          <Link to='/'>Aria<span className="text-white">Abadian</span></Link>
         </h1>
       </div>
       <div

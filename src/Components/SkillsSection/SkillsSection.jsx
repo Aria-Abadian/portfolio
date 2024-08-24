@@ -2,7 +2,7 @@ import logo1 from "../../assets/SkillsSection/Icons/react-2.svg";
 import logo2 from "../../assets/SkillsSection/Icons/logo-javascript.svg";
 import logo3 from "../../assets/SkillsSection/Icons/tailwindcss.svg";
 import logo4 from "../../assets/SkillsSection/Icons/css-3.svg";
-import logo5 from "../../assets/SkillsSection/Icons/vue-9.svg";
+import logo5 from "../../assets/SkillsSection/Icons/nextjs-icon-svgrepo-com.svg";
 import logo6 from "../../assets/SkillsSection/Icons/html-1.svg";
 import logo7 from "../../assets/SkillsSection/Icons/bootstrap-5-1.svg";
 import logo8 from "../../assets/SkillsSection/Icons/typescript.svg";
@@ -10,7 +10,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect,forwardRef } from "react";
 
-const SkillsSection = forwardRef((props, ref) => {
+const SkillsSection = forwardRef ((props, ref) => {
   useEffect(()=>{
     Aos.init({
       duration:1000,

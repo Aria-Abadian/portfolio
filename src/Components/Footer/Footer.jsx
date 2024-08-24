@@ -84,7 +84,7 @@ const Footer = ({ aboutRef, skillsRef, demoRef, blogsRef }) => {
             <li>
               <a
                 className={linksClasses}
-                href="https://www.linkedin.com/in/aria-abadian-262519192"
+                href="https://www.linkedin.com/in/aria-abadian"
               >
                 <FaLinkedinIn />
               </a>

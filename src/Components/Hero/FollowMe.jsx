@@ -23,7 +23,7 @@ const FollowMe = () => {
             <a href="https://www.instagram.com/Aria_abadian/">
               <FaInstagram className={IconsClasses} />
             </a>
-            <a href="https://www.linkedin.com/in/aria-abadian-262519192">
+            <a href="https://www.linkedin.com/in/aria-abadian">
               <FaLinkedin className={IconsClasses} />
             </a>
             <a href="https://github.com/aria-abadian">
